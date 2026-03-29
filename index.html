@@ -1,0 +1,409 @@
+﻿<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مارکتینگ گردشگری سلامت | Farldo</title>
+  <link rel="canonical" href="/">
+  <link rel="icon" type="image/png" sizes="32x32" href="/dist/photo/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/dist/photo/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/dist/photo/favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <a class="navbar-brand" href="/" aria-label="Farldo Marketing">
+          <img src="/dist/photo/logo.png" alt="Farldo Logo" class="brand-mark">
+          <span class="brand-text">Farldo Marketing</span>
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" id="menuToggle" aria-controls="mainMenu" aria-expanded="false" aria-label="باز کردن منو">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="/">خانه</a></li>
+            <li class="nav-item nav-dropdown">
+              <button class="nav-link nav-dropdown__toggle" type="button" data-nav-dropdown aria-expanded="false" aria-controls="servicesMenu">
+                <span>خدمات</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="nav-dropdown__menu" id="servicesMenu">
+                <a href="/services/">نمای کلی خدمات</a>
+                <a href="/services/gad/">گوگل ادز بین‌المللی</a>
+                <a href="/services/mad/">متا ادز بین‌المللی</a>
+                <a href="/services/tad/">تیک‌تاک ادز بین‌المللی</a>
+                <a href="/services/vk-yandex/">VK و Yandex برای بازار روسیه</a>
+                <a href="/services/crm/">بهینه‌سازی CRM بین‌المللی</a>
+                <a href="/services/website-design/">طراحی وب‌سایت گردشگری سلامت</a>
+                <a href="/services/influencer-marketing/">اینفلوئنسر مارکتینگ بین‌المللی</a>
+                <a href="/services/call-center/">راه‌اندازی کال سنتر و تیم فروش حرفه‌ای</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/fromzero/">شروع از صفر</a></li>
+            <li class="nav-item"><a class="nav-link" href="/aboutus/">درباره ما</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contactus/">تماس با ما</a></li>
+          </ul>
+          <button class="btn-consult" type="button" data-modal-open="launchModal">درخواست جلسه</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-shell">
+        <div class="row align-items-center g-4 g-xl-5">
+          <div class="col-lg-6 order-1 order-lg-0">
+            <div class="hero-copy">
+              <span class="hero-badge">Marketing Partner for Health Tourism</span>
+              <h1>ارائه خدمات مارکتینگ تخصصی در حوزه گردشگری سلامت</h1>
+              <p>
+                با بیش از ۷ سال تجربه در بازار توریسم سلامت در ترکیه، آمریکا، رومانی و آلبانی،
+                به کلینیک‌ها و بیمارستان‌ها کمک می‌کنیم با کمپین‌های داده‌محور، جذب بیمار بین‌المللی،
+                بهینه‌سازی CRM و هم‌راستاسازی تیم فروش، نرخ تبدیل پایدار ایجاد کنند.
+              </p>
+              <div class="hero-actions">
+                <button class="btn-main" type="button" data-modal-open="launchModal">شروع همکاری</button>
+                <a href="/services/" class="btn-ghost text-decoration-none">مشاهده خدمات</a>
+              </div>
+              <div class="hero-points">
+                <span><i class="bi bi-check2-circle"></i> تمرکز روی بازارهای بین‌المللی</span>
+                <span><i class="bi bi-check2-circle"></i> اجرای کمپین + پیگیری فروش</span>
+                <span><i class="bi bi-check2-circle"></i> طراحی مسیر کامل لید تا رزرو</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-0 order-lg-1">
+            <div class="hero-visual">
+              <div class="hero-frame">
+                <img src="/dist/photo/hero.webp" alt="بنر تصویری خدمات بازاریابی گردشگری سلامت" class="hero-image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-contact">
+          <div class="hero-contact__intro">
+            <span class="hero-contact__kicker">ارتباط سریع</span>
+            <p>
+              اگر قصد شروع همکاری دارید، اطلاعات پایه مجموعه‌تان را ثبت کنید تا تیم ما سریع با شما تماس بگیرد.
+            </p>
+          </div>
+
+          <form class="hero-contact__form web3-form" data-success-message="درخواست تماس با موفقیت ثبت شد." data-reset-on-success="true">
+            <input type="hidden" name="access_key" value="376820de-8de5-496a-a94e-3af19a4ddf39">
+            <input type="hidden" name="subject" value="Hero Contact Form - Farldo">
+            <input type="checkbox" name="botcheck" class="form-botcheck" tabindex="-1" autocomplete="off">
+            <label class="hero-contact__field">
+              <span>نام و نام خانوادگی</span>
+              <input type="text" name="heroFullName" placeholder="مثلاً علی رضایی" autocomplete="name" required>
+            </label>
+
+            <label class="hero-contact__field">
+              <span>تلفن</span>
+              <input type="tel" name="heroPhone" placeholder="09xx xxx xxxx" autocomplete="tel" required>
+            </label>
+
+            <label class="hero-contact__field">
+              <span>برای چه مجموعه‌ای تماس می‌گیرید؟</span>
+              <select name="organizationType" required>
+                <option value="">انتخاب کنید</option>
+                <option value="clinic">کلینیک</option>
+                <option value="hospital">بیمارستان</option>
+                <option value="doctor">پزشک</option>
+              </select>
+            </label>
+
+            <label class="hero-contact__field hero-contact__field--full">
+              <span>توضیحات</span>
+              <textarea name="heroMessage" rows="4" placeholder="درباره هدف و نیازتان بنویسید"></textarea>
+            </label>
+
+            <div class="hero-contact__actions">
+              <button class="hero-contact__submit" type="submit">ارسال درخواست تماس</button>
+            </div>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="srv-shell">
+        <div class="srv-head text-center">
+          <span class="srv-kicker">Services</span>
+          <h2>راهکارهای رشد برای بازار بین‌المللی گردشگری سلامت</h2>
+          <p>هر سرویس یک مسیر عملیاتی مشخص دارد: جذب لید، بهینه‌سازی قیف فروش و رشد پایدار.</p>
+        </div>
+
+        <div class="srv-grid">
+          <a href="/services/gad/" class="srv-card s1" aria-label="گوگل ادز بین‌المللی">
+            <span class="srv-icon"><i class="bi bi-search"></i></span>
+            <h3>گوگل ادز بین‌المللی</h3>
+            <p>اجرای کمپین‌های Google Ads برای بازارهای هدف پزشکی.</p>
+            <span class="srv-more">جزئیات سرویس <i class="bi bi-arrow-left"></i></span>
+          </a>
+
+          <a href="/services/mad/" class="srv-card s2" aria-label="متا ادز بین‌المللی">
+            <span class="srv-icon"><i class="bi bi-instagram"></i></span>
+            <h3>متا ادز بین‌المللی</h3>
+            <p>تبلیغات Facebook و Instagram برای لیدهای درمانی باکیفیت.</p>
+            <span class="srv-more">جزئیات سرویس <i class="bi bi-arrow-left"></i></span>
+          </a>
+
+          <a href="/services/tad/" class="srv-card s3" aria-label="تیک‌تاک ادز بین‌المللی">
+            <span class="srv-icon"><i class="bi bi-camera-reels"></i></span>
+            <h3>تیک‌تاک ادز بین‌المللی</h3>
+            <p>کمپین‌های ویدیویی برای افزایش Awareness و جذب سریع.</p>
+            <span class="srv-more">جزئیات سرویس <i class="bi bi-arrow-left"></i></span>
+          </a>
+
+          <a href="/services/vk-yandex/" class="srv-card s4" aria-label="تبلیغات VK و Yandex">
+            <span class="srv-icon"><i class="bi bi-globe2"></i></span>
+            <h3>VK و Yandex برای بازار روسیه</h3>
+            <p>استراتژی اختصاصی تبلیغات برای مخاطب روس‌زبان.</p>
+            <span class="srv-more">جزئیات سرویس <i class="bi bi-arrow-left"></i></span>
+          </a>
+
+          <a href="/services/crm/" class="srv-card s5" aria-label="بهینه‌سازی CRM بین‌المللی">
+            <span class="srv-icon"><i class="bi bi-diagram-3"></i></span>
+            <h3>بهینه‌سازی CRM بین‌المللی</h3>
+            <p>اتوماسیون Zoho و HubSpot برای مدیریت و پیگیری لید.</p>
+            <span class="srv-more">جزئیات سرویس <i class="bi bi-arrow-left"></i></span>
+          </a>
+
+          <a href="/services/website-design/" class="srv-card s6" aria-label="طراحی سایت گردشگری سلامت">
+            <span class="srv-icon"><i class="bi bi-window"></i></span>
+            <h3>طراحی وب‌سایت گردشگری سلامت</h3>
+            <p>وب‌سایت چندزبانه با تمرکز روی UX و نرخ تبدیل.</p>
+            <span class="srv-more">جزئیات سرویس <i class="bi bi-arrow-left"></i></span>
+          </a>
+
+          <a href="/services/influencer-marketing/" class="srv-card s7" aria-label="اینفلوئنسر مارکتینگ بین‌المللی">
+            <span class="srv-icon"><i class="bi bi-megaphone"></i></span>
+            <h3>اینفلوئنسر مارکتینگ بین‌المللی</h3>
+            <p>همکاری با اینفلوئنسرهای هدفمند برای اعتمادسازی برند.</p>
+            <span class="srv-more">جزئیات سرویس <i class="bi bi-arrow-left"></i></span>
+          </a>
+
+          <a href="/services/call-center/" class="srv-card s8" aria-label="راه‌اندازی کال سنتر و تیم فروش">
+            <span class="srv-icon"><i class="bi bi-headset"></i></span>
+            <h3>راه‌اندازی کال سنتر و تیم فروش حرفه‌ای</h3>
+            <p>سازمان‌دهی پاسخ‌گویی، پیگیری لید و بستن فروش.</p>
+            <span class="srv-more">جزئیات سرویس <i class="bi bi-arrow-left"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-story">
+        <div class="about-intro">
+          <span class="about-kicker">درباره ما</span>
+          <h2>تیم ما رشد برندهای گردشگری سلامت را از تبلیغ تا فروش نهایی طراحی می‌کند</h2>
+          <p>
+            این بخش را طوری ساختیم که هم برای معرفی سابقه و دستاوردها مناسب باشد، هم بتوانی
+            تصویر تیم، ویدیو معرفی، نمونه‌کار یا هر محتوای روایی دلخواه را به‌راحتی جایگذاری کنی.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <article class="about-visual">
+            <div class="about-section-head">
+              <span>ورود به بازار</span>
+              <h3>مسیر ورود به بازار توریست سلامت</h3>
+            </div>
+            <div class="about-visual__frame">
+              <img src="/dist/photo/roadmap.webp" alt="مسیر ورود به بازار توریست سلامت" class="about-visual__image">
+            </div>
+          </article>
+
+          <article class="about-copy">
+            <div class="about-section-head">
+              <span>درباره ما</span>
+              <h3>درباره ما</h3>
+            </div>
+            <p>ما به برندها، کلینیک‌ها، بیمارستان‌ها و مجموعه‌های فعال در حوزه توریست سلامت کمک می‌کنیم تا فراتر از تبلیغات مقطعی فکر کنند و یک مسیر رشد واقعی، قابل اندازه‌گیری و ماندگار بسازند. تمرکز ما فقط روی جذب لید بیشتر نیست؛ بلکه روی طراحی و بهینه‌سازی کل مسیر رشد است، از دیده‌شدن در بازارهای بین‌المللی و جذب مخاطب درست، تا مدیریت بهتر سرنخ‌ها، بهینه‌سازی CRM، هماهنگی تیم فروش و افزایش نرخ تبدیل واقعی.
+
+این مسیری نیست که فقط درباره‌اش صحبت کرده باشیم؛ ما آن را در عمل تجربه کرده‌ایم. با سال‌ها فعالیت تخصصی در حوزه توریست سلامت و همکاری با برندها و مجموعه‌های فعال در بازارهای مختلف، از نزدیک دیده‌ایم که رشد پایدار زمانی اتفاق می‌افتد که تبلیغات، فرآیند فروش، زیرساخت CRM و تجربه بیمار در یک مسیر منسجم کنار هم قرار بگیرند. به همین دلیل نگاه ما صرفاً تبلیغاتی نیست؛ ما به ساختن سیستم‌هایی فکر می‌کنیم که بتوانند اعتماد ایجاد کنند، عملکرد تیم‌ها را بهتر کنند و در نهایت توجه مخاطب را به بیمار واقعی تبدیل کنند. </p>
+            <p>
+        ما باور داریم در توریست سلامت، موفقیت فقط با بیشتر دیده شدن به دست نمی‌آید؛ موفقیت زمانی ساخته می‌شود که برند بتواند در لحظه درست، پیام درست را به مخاطب درست برساند و این ارتباط را تا مرحله تصمیم‌گیری، درمان و حتی پس از آن به‌درستی مدیریت کند. رویکرد ما بر پایه تجربه، داده، شناخت بازارهای بین‌المللی و درک واقعی از رفتار بیماران شکل گرفته تا به برندها کمک کند رشدشان را نه به شکل اتفاقی، بلکه به‌صورت هدفمند و ساختاریافته بسازند.    </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="launch" id="launch-from-zero">
+    <div class="container">
+      <div class="launch-shell">
+        <div class="launch-copy">
+          <span class="launch-kicker">شروع همکاری</span>
+          <h2>راه‌اندازی از صفر</h2>
+          <p>
+            اگر قصد ورود به حوزه توریست سلامت دارید، با پر کردن فرم زیر اجازه بررسی برند خود را
+            به کارشناسان ما دهید تا در اسرع وقت برای راه‌اندازی سیستم توریست سلامت با شما جلسه بگذاریم.
+          </p>
+        </div>
+        <div class="launch-action">
+          <button class="launch-btn" type="button" data-modal-open="launchModal">درخواست بررسی برند</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo" aria-label="Farldo Marketing">
+            <img src="/dist/photo/logo.png" alt="Farldo Logo" class="footer-mark">
+            <span>Farldo Marketing</span>
+          </a>
+          <p>ارائه خدمات مارکتینگ بین‌المللی در حوزه گردشگری سلامت با تمرکز بر جذب لید و افزایش فروش.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/farldo" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com/company/farldo" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://t.me/farldo" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>لینک‌های سریع</h4>
+          <ul>
+            <li><a href="/">خانه</a></li>
+            <li><a href="/services/">خدمات مارکتینگ</a></li>
+            <li><a href="/fromzero/">شروع از صفر</a></li>
+            <li><a href="/aboutus/">درباره ما</a></li>
+            <li><a href="/contactus/">تماس با ما</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>سرویس‌ها</h4>
+          <ul>
+            <li><a href="/services/gad/">گوگل ادز بین‌المللی</a></li>
+            <li><a href="/services/mad/">متا ادز بین‌المللی</a></li>
+            <li><a href="/services/tad/">تیک‌تاک ادز بین‌المللی</a></li>
+            <li><a href="/services/vk-yandex/">VK و Yandex برای بازار روسیه</a></li>
+            <li><a href="/services/crm/">بهینه‌سازی CRM بین‌المللی</a></li>
+            <li><a href="/services/website-design/">طراحی وب‌سایت گردشگری سلامت</a></li>
+            <li><a href="/services/influencer-marketing/">اینفلوئنسر مارکتینگ بین‌المللی</a></li>
+            <li><a href="/services/call-center/">راه‌اندازی کال سنتر و تیم فروش حرفه‌ای</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>ارتباط با ما</h4>
+          <ul>
+            <li><i class="bi bi-envelope"></i> <a href="mailto:info@farldo.com">info@farldo.com</a></li>
+            <li><i class="bi bi-telephone"></i> <a href="tel:+905516885398" dir="ltr">+905516885398</a></li>
+            <li><i class="bi bi-geo-alt"></i> استانبول، ترکیه</li>
+          </ul>
+          <a href="/contactus/" class="footer-cta">درخواست مشاوره</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Farldo Marketing. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="site-modal" id="launchModal" aria-hidden="true">
+    <div class="site-modal__backdrop" data-modal-close></div>
+    <div class="site-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="launchModalTitle">
+      <button class="site-modal__close" type="button" aria-label="بستن فرم" data-modal-close>
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <div class="site-modal__head">
+        <span>Brand Review</span>
+        <h3 id="launchModalTitle">فرم بررسی اولیه برند</h3>
+        <p>فعلاً این فرم فقط اطلاعات پایه را دریافت می‌کند و بعداً کامل‌ترش می‌کنیم.</p>
+      </div>
+      <form class="site-form web3-form" data-success-message="پیغامتون دریافت شد و به زودی باهاتون تماس می‌گیریم." data-close-on-success="false" data-reset-on-success="true">
+        <input type="hidden" name="access_key" value="8eff727e-6437-44f0-b7bf-29573e949c51">
+        <input type="hidden" name="subject" value="Brand Review Modal - Farldo">
+        <input type="checkbox" name="botcheck" class="form-botcheck" tabindex="-1" autocomplete="off">
+        <label class="site-field">
+          <span>نام و نام خانوادگی</span>
+          <input type="text" name="fullName" placeholder="مثلاً علی رضایی" autocomplete="name" required>
+        </label>
+        <label class="site-field">
+          <span>تلفن</span>
+          <input type="tel" name="phone" placeholder="مثلاً +905516885398" autocomplete="tel" required>
+        </label>
+        <label class="site-field">
+          <span>ایمیل</span>
+          <input type="email" name="email" placeholder="مثلاً info@example.com" autocomplete="email" required>
+        </label>
+        <label class="site-field">
+          <span>برای چه مجموعه‌ای درخواست می‌دهید؟</span>
+          <select name="organizationType" required>
+            <option value="" disabled selected>انتخاب کنید</option>
+            <option value="پزشک">پزشک</option>
+            <option value="بیمارستان">بیمارستان</option>
+            <option value="دکتر">دکتر</option>
+          </select>
+        </label>
+        <fieldset class="site-radio-group">
+          <legend>آیا قبلاً در این حوزه فعالیت کردید؟</legend>
+          <label class="site-radio-option">
+            <input type="radio" name="hasExperience" value="بله" required>
+            <span>بله</span>
+          </label>
+          <label class="site-radio-option">
+            <input type="radio" name="hasExperience" value="خیر" required>
+            <span>خیر</span>
+          </label>
+        </fieldset>
+        <label class="site-field">
+          <span>کدام پلتفرم را برای تماس ترجیح می‌دهید؟</span>
+          <select name="preferredPlatform" required>
+            <option value="" disabled selected>انتخاب کنید</option>
+            <option value="تلگرام">تلگرام</option>
+            <option value="واتس اپ">واتس اپ</option>
+            <option value="ایمیل">ایمیل</option>
+            <option value="تماس مستقیم">تماس مستقیم</option>
+          </select>
+        </label>
+        <p class="form-status" aria-live="polite"></p>
+        <button class="site-form__submit" type="submit">ارسال</button>
+      </form>
+    </div>
+  </div>
+
+  <a class="floating-whatsapp" href="https://wa.me/905516885398" target="_blank" rel="noopener noreferrer" aria-label="تماس در واتس اپ">
+    <span class="floating-whatsapp__halo"></span>
+    <span class="floating-whatsapp__label">واتس اپ</span>
+    <span class="floating-whatsapp__icon"><i class="bi bi-whatsapp"></i></span>
+  </a>
+
+  <a class="floating-telegram" href="https://t.me/farldo" target="_blank" rel="noopener noreferrer" aria-label="تماس در تلگرام">
+    <span class="floating-telegram__halo"></span>
+    <span class="floating-telegram__label">تلگرام</span>
+    <span class="floating-telegram__icon"><i class="bi bi-telegram"></i></span>
+  </a>
+
+  <script src="/Script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
