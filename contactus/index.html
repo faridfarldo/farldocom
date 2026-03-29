@@ -13,9 +13,11 @@
   <meta property="og:title" content="تماس با ما | Farldo Marketing">
   <meta property="og:description" content="برای شروع همکاری، دریافت مشاوره یا ارتباط سریع با تیم Farldo از طریق فرم تماس، واتس‌اپ، تلگرام و شبکه‌های اجتماعی با ما در ارتباط باشید.">
   <meta property="og:site_name" content="Farldo Marketing">
+  <meta property="og:image" content="/dist/photo/contactmap.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="تماس با ما | Farldo Marketing">
   <meta name="twitter:description" content="ارتباط با Farldo از طریق فرم تماس، تلگرام، واتس‌اپ و شبکه‌های اجتماعی برای خدمات مارکتینگ بین‌المللی حوزه توریست سلامت.">
+  <meta name="twitter:image" content="/dist/photo/contactmap.webp">
   <link rel="canonical" href="/contactus/">
   <link rel="icon" type="image/png" sizes="32x32" href="/dist/photo/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/dist/photo/favicon-192.png">
@@ -44,12 +46,13 @@
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
             <li class="nav-item"><a class="nav-link" href="/">خانه</a></li>
             <li class="nav-item nav-dropdown">
-              <button class="nav-link nav-dropdown__toggle" type="button" data-nav-dropdown aria-expanded="false" aria-controls="servicesMenu">
-                <span>خدمات</span>
-                <i class="bi bi-chevron-down"></i>
-              </button>
+              <div class="nav-dropdown__trigger">
+                <a class="nav-link" href="/services/">خدمات</a>
+                <button class="nav-link nav-dropdown__toggle" type="button" data-nav-dropdown aria-expanded="false" aria-controls="servicesMenu" aria-label="نمایش زیرمنوی خدمات">
+                  <i class="bi bi-chevron-down"></i>
+                </button>
+              </div>
               <div class="nav-dropdown__menu" id="servicesMenu">
-                <a href="/services/">نمای کلی خدمات</a>
                 <a href="/services/gad/">گوگل ادز بین‌المللی</a>
                 <a href="/services/mad/">متا ادز بین‌المللی</a>
                 <a href="/services/tad/">تیک‌تاک ادز بین‌المللی</a>
@@ -83,10 +86,9 @@
                   گروه ما به صورت یک تیم واحد در کشورهای مختلف دنیا فعالیت می‌کند، اگرچه هسته اصلی این گروه در ترکیه قرار دارد.
                 </p>
               </div>
-              <div class="contact-photo-frame" aria-label="جایگاه تصویر تماس با ما">
+              <div class="contact-photo-frame" aria-label="نقشه و موقعیت فعالیت Farldo Marketing">
                 <div class="contact-photo-frame__inner">
-                  <i class="bi bi-image"></i>
-                  <span>جای تصویر</span>
+                  <img src="/dist/photo/contactmap.webp" alt="نقشه موقعیت و گستره فعالیت Farldo Marketing" class="contact-photo-frame__image">
                 </div>
               </div>
             </aside>

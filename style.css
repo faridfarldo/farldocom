@@ -89,15 +89,22 @@ body {
   position: relative;
 }
 
+.nav-dropdown__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .nav-dropdown__toggle {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   font: inherit;
   font-weight: 600;
   line-height: inherit;
   color: inherit;
   border: 0;
-  padding: 0;
+  padding: 0 0.15rem;
   background: transparent;
   appearance: none;
 }
@@ -918,6 +925,16 @@ body {
   background: rgba(255, 255, 255, 0.6);
 }
 
+.contact-photo-frame__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 424px;
+  border-radius: 18px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .contact-photo-frame__inner i {
   font-size: 2.3rem;
 }
@@ -1187,6 +1204,16 @@ body {
   background: rgba(255, 255, 255, 0.6);
 }
 
+.fromzero-panel-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 246px;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .fromzero-panel-card__visual i {
   font-size: 2.3rem;
 }
@@ -1451,6 +1478,16 @@ body {
   background: rgba(255, 255, 255, 0.6);
 }
 
+.aboutus-panel-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 246px;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .aboutus-panel-card__visual i {
   font-size: 2.3rem;
 }
@@ -1630,9 +1667,10 @@ body {
 .service-page-hero__image {
   display: block;
   width: 100%;
+  height: clamp(320px, 38vw, 560px);
   min-height: 320px;
-  max-height: 460px;
   object-fit: cover;
+  object-position: center;
 }
 
 .service-page-hero__lead {
@@ -1763,78 +1801,6 @@ body {
   line-height: 1.95;
 }
 
-.service-seo-links {
-  padding: 0 0 18px;
-}
-
-.service-seo-links__shell {
-  border-radius: 30px;
-  padding: 24px;
-  border: 1px solid rgba(148, 163, 184, 0.24);
-  background:
-    radial-gradient(circle at 92% 14%, rgba(14, 165, 233, 0.11), transparent 24%),
-    radial-gradient(circle at 10% 84%, rgba(15, 118, 110, 0.1), transparent 24%),
-    rgba(255, 255, 255, 0.92);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.07);
-}
-
-.service-seo-links__kicker {
-  display: inline-flex;
-  margin-bottom: 0.8rem;
-  border-radius: 999px;
-  padding: 0.34rem 0.76rem;
-  color: #0f766e;
-  font-size: 0.76rem;
-  font-weight: 800;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(15, 118, 110, 0.22);
-}
-
-.service-seo-links__shell h2 {
-  margin: 0 0 0.75rem;
-  color: #0f172a;
-  font-size: clamp(1.35rem, 2vw, 1.75rem);
-  font-weight: 800;
-}
-
-.service-seo-links__shell p {
-  margin: 0 0 1rem;
-  color: #475569;
-  line-height: 1.95;
-}
-
-.service-seo-links__shell p a {
-  color: #0f766e;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.service-seo-links__grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.service-seo-links__card {
-  display: block;
-  padding: 0.95rem 1rem;
-  border-radius: 18px;
-  border: 1px solid rgba(148, 163, 184, 0.2);
-  background: rgba(248, 250, 252, 0.92);
-  color: #0f172a;
-  font-size: 0.92rem;
-  font-weight: 700;
-  line-height: 1.8;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.service-seo-links__card:hover,
-.service-seo-links__card:focus {
-  transform: translateY(-2px);
-  border-color: rgba(15, 118, 110, 0.28);
-  box-shadow: 0 14px 24px rgba(15, 23, 42, 0.08);
-}
 
 .services-hub {
   padding: 76px 0 18px;
@@ -2632,10 +2598,25 @@ body {
     align-items: stretch;
   }
 
-  .nav-link,
-  .nav-dropdown__toggle {
+  .nav-dropdown__trigger {
+    width: 100%;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .nav-dropdown__trigger > .nav-link {
+    flex: 1 1 auto;
+  }
+
+  .nav-link {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .nav-dropdown__toggle {
+    width: auto;
+    flex: 0 0 auto;
+    justify-content: center;
   }
 
   .nav-dropdown__menu {
@@ -2844,8 +2825,7 @@ body {
   .service-page-hero__shell,
   .service-outline__shell,
   .service-article__shell,
-  .service-faq__shell,
-  .service-seo-links__shell {
+  .service-faq__shell {
     padding: 20px;
     border-radius: 24px;
   }
@@ -2856,10 +2836,6 @@ body {
 
   .service-page-hero__image {
     min-height: 280px;
-  }
-
-  .service-seo-links__grid {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -3081,6 +3057,7 @@ body {
   }
 
   .service-page-hero__image {
+    height: auto;
     min-height: 220px;
   }
 
