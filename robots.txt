@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Core assets
+Allow: /style.css
+Allow: /Script.js
+Allow: /dist/photo/
+
+Sitemap: https://farldo.com/sitemap.xml
+Host: farldo.com
