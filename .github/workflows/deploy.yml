@@ -10,6 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate text encoding did not get corrupted
+        shell: pwsh
+        run: ./scripts/check-corrupted-persian.ps1
+
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
