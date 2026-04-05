@@ -1,0 +1,28 @@
+AddDefaultCharset UTF-8
+
+<IfModule mod_mime.c>
+  AddCharset UTF-8 .html .htm .css .js .xml .txt
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm)$">
+    Header set Content-Type "text/html; charset=UTF-8"
+    Header always set X-Content-Type-Options "nosniff"
+  </FilesMatch>
+
+  <FilesMatch "\.(css)$">
+    Header set Content-Type "text/css; charset=UTF-8"
+  </FilesMatch>
+
+  <FilesMatch "\.(js)$">
+    Header set Content-Type "text/javascript; charset=UTF-8"
+  </FilesMatch>
+
+  <FilesMatch "\.(xml)$">
+    Header set Content-Type "application/xml; charset=UTF-8"
+  </FilesMatch>
+
+  <FilesMatch "\.(txt)$">
+    Header set Content-Type "text/plain; charset=UTF-8"
+  </FilesMatch>
+</IfModule>
